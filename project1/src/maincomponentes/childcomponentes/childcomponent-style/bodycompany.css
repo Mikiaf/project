@@ -1,0 +1,14 @@
+.company-container{
+    display: flex;
+    margin-top: 25px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+.companyfullbar-container{
+    background-color: rgb(164, 161, 177);
+    width: 100%;
+    height: 400px;
+    color: white;
+    padding: 10px;
+}

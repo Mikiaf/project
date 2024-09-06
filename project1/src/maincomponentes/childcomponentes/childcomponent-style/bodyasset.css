@@ -1,0 +1,266 @@
+.asset-container{
+    display: flex;
+    margin-top: 25px;
+    width: 100%;
+    height: 100%;
+}
+/* asset mainbar container css/style code*/
+.assetMainbar-conatiner{
+    background-color: rgb(163, 165, 165);
+    width: 170px;
+    height: 210px;
+}
+/* asset mainbar button css/style code*/
+.assetMainbar-conatiner button{
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    background-color: rgb(79, 104, 107);
+    color: white;
+    border-radius:2px;
+    cursor: pointer;
+}
+.assetMainbar-conatiner  button:hover{
+    background-color: rgb(24, 124, 124);
+    transition: 60ms;
+}
+.assetMainbar-conatiner button:active{
+    background-color: rgb(24, 67, 124);
+}
+/* asset sidebar container css/style code*/
+.assetsidebar-container{
+    margin-left: 53px;
+}
+/* asset sidebar branchasset table css/style code*/
+
+.branchasset-container .branchassettable-container{
+    background-color: #8295b84b;
+    margin-top: 5px;
+    width: 702px;
+    height: 300px;
+    overflow: auto; 
+}
+.branchasset-container .branchassettable-container table, th, td{
+    border-collapse: collapse;
+    padding: 1rem;
+    padding-left: 25px;
+}
+.branchasset-container .branchassettable-container thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(132, 148, 167, 0.966);
+    color: rgba(12, 12, 12, 0.808);
+    font-size: 91%;
+    padding-left: 13.6px;
+}
+.branchasset-container .branchassettable-container td{
+    padding-left: 13.6px;
+}
+.branchasset-container .branchassettable-container::-webkit-scrollbar{
+    width:0.6rem;
+    height:0.4rem;
+}
+.branchasset-container .branchassettable-container::-webkit-scrollbar-thumb{
+   background-color: rgba(34, 26, 26, 0.199);
+}
+
+.branchassettable-container tbody tr:nth-child(even){
+    background-color: #8295b8a9;
+}
+/*asset sidebar deliver asset container*/
+.deliveryasset-container .deliveryassetintable-container{
+    background-color: #8295b84b;
+    margin-top: 5px;
+    width: 702px;
+    height: 300px;
+    overflow: auto; 
+}
+.deliveryasset-container .deliveryassetintable-container table, th, td{
+    border-collapse: collapse;
+    padding: 1rem;
+    padding-left: 25px;
+}
+.deliveryasset-container .deliveryassetintable-container thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(163, 132, 167, 0.966);
+    color: rgba(12, 12, 12, 0.808);
+    font-size: 91%;
+    padding-left: 13.6px;
+}
+.deliveryasset-container .deliveryassetintable-container td{
+    padding-left: 13.6px;
+}
+.deliveryasset-container .deliveryassetintable-container::-webkit-scrollbar{
+    width:0.6rem;
+    height:0.4rem;
+}
+.deliveryasset-container .deliveryassetintable-container::-webkit-scrollbar-thumb{
+   background-color: rgba(34, 26, 26, 0.199);
+}
+
+.deliveryassetintable-container tbody tr:nth-child(even){
+    background-color: #8295b8a9;
+}
+/*asset sidebar bakery container css/style code*/
+.bakerasset-container .bakeryassetintable-container{
+    background-color: #8295b84b;
+    margin-top: 5px;
+    width: 702px;
+    height: 300px;
+    overflow: auto; 
+}
+.bakerasset-container .bakeryassetintable-container table, th, td{
+    border-collapse: collapse;
+    padding: 1rem;
+    padding-left: 25px;
+}
+.bakerasset-container .bakeryassetintable-container thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(144, 214, 219, 0.966);
+    color: rgba(12, 12, 12, 0.808);
+    font-size: 91%;
+    padding-left: 13.6px;
+}
+.bakerasset-container .bakeryassetintable-container td{
+    padding-left: 13.6px;
+}
+.bakerasset-container .bakeryassetintable-container::-webkit-scrollbar{
+    width:0.6rem;
+    height:0.4rem;
+}
+.bakerasset-container .bakeryassetintable-container::-webkit-scrollbar-thumb{
+   background-color: rgba(34, 26, 26, 0.199);
+}
+
+.bakeryassetintable-container tbody tr:nth-child(even){
+    background-color: #8295b8a9;
+}
+/*asset sidebar full asset info contaner css/style code*/
+.fullassetInfo-container .searche-container input{
+    width: 690px;
+    height: 30px;
+    border: none;
+    background-color: rgb(170, 207, 207);
+    border-radius: 2px;
+    margin-top: 5px;
+    padding-left: 10px;
+    outline: none;
+}
+.fullassetInfo-container .fullassetinfointable-container{
+    background-color: #8295b84b;
+    margin-top: 5px;
+    width: 702px;
+    height: 300px;
+    overflow: auto; 
+}
+.fullassetInfo-container .fullassetinfointable-container table, th, td{
+    border-collapse: collapse;
+    padding: 1rem;
+    padding-left: 25px;
+}
+.fullassetInfo-container .fullassetinfointable-container thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(183, 187, 146, 0.966);
+    color: rgba(12, 12, 12, 0.808);
+    font-size: 91%;
+    padding-left: 13.6px;
+}
+.fullassetInfo-container .fullassetinfointable-container td{
+    padding-left: 13.6px;
+}
+.fullassetInfo-container .fullassetinfointable-container::-webkit-scrollbar{
+    width:0.6rem;
+    height:0.4rem;
+}
+.fullassetInfo-container .fullassetinfointable-container::-webkit-scrollbar-thumb{
+   background-color: rgba(34, 26, 26, 0.199);
+}
+
+.fullassetinfointable-container tbody tr:nth-child(even){
+    background-color: #8295b8a9;
+}
+/*asset sidebar fullassetinf status table css/style code*/
+.assetstatus-container{
+    background-color: rgb(111, 206, 209);
+    margin-top: 5px;
+    width: 702px;
+    height: 300px;
+}
+.manageasset-button{
+    background-color:rgba(152, 114, 293, 0.767);
+    outline: none;
+    border:none;
+    margin-left:580px;
+    margin-top:260px;
+    width:110px;
+    height:30px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.manageasset-buttoncontainer button:hover{
+    background-color:rgb(24, 124, 124);
+    transition: 60ms;
+}
+.manageasset-buttoncontainer button:active{
+    background-color: rgb(24, 67, 124);
+}
+/*##################################
+    addasset button style/css code
+*/
+/* doneinfos style/css code*/
+.addasset-container .submitedinfo-container{
+    background-color: rgba(152, 214, 193, 0.767);
+    width: 702px;
+    height: 170px;
+}
+/* forminfo style/css code*/
+.addasset-container .forminfo-container{
+    margin-top: 10px;
+    background-color: rgba(155, 179, 224, 0.555);
+    padding: 15px;
+    color: rgb(46, 45, 45);
+}
+.addasset-container .forminfo-container input{
+    width: 300px;
+    height: 30px;
+    border: none;
+    background-color: rgba(229, 231, 231, 0.87);
+    border-radius: 2px;
+    margin-top: 5px;
+    padding-left: 10px;
+    margin-top: 15px;
+    outline: none;
+}
+.addasset-container .forminfo-container button{
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgba(122, 158, 146, 0.767);
+    color: white;
+    cursor: pointer;
+}
+.addasset-container .forminfo-container button:hover{
+    background-color: rgb(170, 130, 207);
+}
+.addasset-container  .formimage-container{
+    display: flex;
+    width: 200px;
+    height: 215px;
+    margin-left: 130px;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+    border: solid rgb(90, 113, 214) 1px;
+}

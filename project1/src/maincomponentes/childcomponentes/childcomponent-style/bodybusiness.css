@@ -1,0 +1,288 @@
+.business-container{
+    display: flex;
+    margin-top: 25px;
+    width: 100%;
+    height: 100%;
+}
+.businessmainbar-container{
+    background-color: rgb(163, 165, 165);
+    width: 170px;
+    height: 170px;
+}
+/* business mainbar button style/css code*/
+.businessmainbar-container button{
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    background-color: rgb(79, 104, 107);
+    color: white;
+    border-radius:2px;
+    cursor: pointer;
+}
+.businessmainbar-container  button:hover{
+    background-color: rgb(24, 124, 124);
+    transition: 60ms;
+}
+.businessmainbar-container button:active{
+    background-color: rgb(24, 67, 124);
+}
+/* business sidebar button style/css code*/
+.businesssidebar-container{
+    margin-left: 53px;
+}
+/*business sidebar transaction*/
+/* business sidebar transaction table style/css code*/
+.transaction-conatainer .transactioninfoTable-container{
+    background-color: #8295b84b;
+    margin-top: 5px;
+    width: 702px;
+    height: 300px;
+    overflow: auto; 
+}
+.transaction-conatainer .transactioninfoTable-container table, th, td{
+    border-collapse: collapse;
+    padding: 1rem;
+    padding-left: 25px;
+}
+.transaction-conatainer .transactioninfoTable-container thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(132, 148, 167, 0.966);
+    color: rgba(12, 12, 12, 0.808);
+    font-size: 91%;
+    padding-left: 9.6px;
+}
+.transaction-conatainer .transactioninfoTable-container::-webkit-scrollbar{
+    width:0.6rem;
+    height:0.4rem;
+}
+.transaction-conatainer .transactioninfoTable-container::-webkit-scrollbar-thumb{
+   background-color: rgba(34, 26, 26, 0.199);
+}
+.transaction-conatainer .transactioninfoTable-container td{
+    padding-left: 9.6px;
+}
+.transactioninfoTable-container tbody tr:nth-child(even){
+    background-color: #8295b8a9;
+}
+/* business sidebar transaction graph style/css code*/
+.transaction-conatainer .transactiongraph-container{
+    width: 702px;
+    height: 210px;
+    background-color: rgb(208, 241, 235);
+}
+/*business sidebar sellstatus style/css code*/
+/* business sidebar sellstatus table style/css code*/
+.sellstatus-container .branchsellinfoTable-container{
+    background-color: #8295b84b;
+    margin-top: 5px;
+    width: 702px;
+    height: 200px;
+    overflow: auto; 
+}
+.sellstatus-container .branchsellinfoTable-container table, th, td{
+    border-collapse: collapse;
+    padding: 1rem;
+    padding-left: 25px;
+}
+.sellstatus-container .branchsellinfoTable-container thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(132, 148, 167, 0.966);
+    color: rgba(12, 12, 12, 0.808);
+    font-size: 91%;
+    padding-left: 10.6px;
+}
+.sellstatus-container .branchsellinfoTable-container::-webkit-scrollbar{
+    width:0.6rem;
+    height:0.4rem;
+}
+.sellstatus-container .branchsellinfoTable-container::-webkit-scrollbar-thumb{
+   background-color: rgba(34, 26, 26, 0.199);
+}
+.sellstatus-container .branchsellinfoTable-container td{
+    padding-left: 10.6px;
+}
+.branchsellinfoTable-container tbody tr:nth-child(even){
+    background-color: #8295b8a9;
+}
+.sellstatus-container .branchsellinfoTable-container::-webkit-scrollbar{
+    width:0.5rem;
+    height:0.4rem;
+}
+.sellstatus-container .branchsellinfoTable-container::-webkit-scrollbar-thumb{
+   background-color: rgba(34, 26, 26, 0.199);
+}
+/* business sidebar bakery sendout table style/css code*/
+.sellstatus-container .bakerysendoutTable-container{
+    background-color: #8295b84b;
+    margin-top: 5px;
+    width: 702px;
+    height: 200px;
+    overflow: auto; 
+}
+.sellstatus-container .bakerysendoutTable-container table, th, td{
+    border-collapse: collapse;
+    padding: 1rem;
+    padding-left: 25px;
+}
+.sellstatus-container .bakerysendoutTable-container thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(124, 118, 116, 0.966);
+    color: rgba(12, 12, 12, 0.808);
+    font-size: 91%;
+    padding-left: 10.6px;
+}
+.sellstatus-container .bakerysendoutTable-container::-webkit-scrollbar{
+    width:0.6rem;
+    height:0.4rem;
+}
+.sellstatus-container .bakerysendoutTable-container::-webkit-scrollbar-thumb{
+   background-color: rgba(34, 26, 26, 0.199);
+}
+.sellstatus-container .bakerysendoutTable-container td{
+    padding-left: 10.6px;
+}
+.bakerysendoutTable-container tbody tr:nth-child(even){
+    background-color: #8295b8a9;
+}
+.sellstatus-container .bakerysendoutTable-container::-webkit-scrollbar{
+    width:0.5rem;
+    height:0.4rem;
+}
+.sellstatus-container .bakerysendoutTable-container::-webkit-scrollbar-thumb{
+   background-color: rgba(34, 26, 26, 0.199);
+}
+.branchsellinfoP-container p{
+    background-color: rgba(180, 224, 159, 0.966);
+    width: 200px;
+    height: 20px;
+    display: flex;
+    border-radius: 2px;
+    justify-content: center;
+    align-items: center;
+}
+.baksersendoutinfoP-container p{
+    background-color: rgba(159, 182, 224, 0.966);
+    width: 200px;
+    height: 20px;
+    display: flex;
+    border-radius: 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* business sidebar transaction graph style/css code*/
+.sellstatusgraph-conatainer{
+    background-color: rgba(152, 214, 193, 0.767);
+    width: 702px;
+    height: 210px;
+    margin-top: 10px;
+}
+
+/* business sidebar salarystatus style/css code*/
+/* business sidebar salarystatus table style/css code*/
+
+.salarystatus-container .salarystatustable-container{
+    background-color: #8295b84b;
+    margin-top: 2px;
+    width: 702px;
+    height: 300px;
+    overflow: auto; 
+}
+.salarystatus-container .salarystatustable-container table, th, td{
+    border-collapse: collapse;
+    padding: 1rem;
+    padding-left: 25px;
+}
+.salarystatus-container .salarystatustable-container thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(132, 148, 167, 0.966);
+    color: rgba(12, 12, 12, 0.808);
+    font-size: 91%;
+    padding-left: 9.6px;
+}
+.salarystatus-container .salarystatustable-container::-webkit-scrollbar{
+    width:0.6rem;
+    height:0.4rem;
+}
+.salarystatus-container .salarystatustable-container::-webkit-scrollbar-thumb{
+   background-color: rgba(34, 26, 26, 0.199);
+}
+.salarystatus-container .salarystatustable-container td{
+    padding-left: 9.6px;
+}
+.salarystatustable-container tbody tr:nth-child(even){
+    background-color: #8295b8a9;
+}
+.salarystatus-container  .salarystatustable-container::-webkit-scrollbar{
+    width:0.6rem;
+    height:0.4rem;
+}
+.salarystatus-container  .salarystatustable-container::-webkit-scrollbar-thumb{
+   background-color:rgba(34, 26, 26, 0.199);;
+}
+/* business sidebar salarystatus in graph style/css code*/
+.salarystatus-container .statusgraph-container{
+    background-color: rgba(159, 168, 179, 0.966);
+    width: 702px;
+    height: 210px;
+}
+/* business sidebar profit and lose style/css code*/
+/* business sidebar profit and lose table style/css code*/
+.profitandlose-container .prolosetable-container{
+    background-color: #8295b84b;
+    margin-top: 5px;
+    width: 702px;
+    height: 300px;
+    overflow: auto; 
+}
+.profitandlose-container .prolosetable-container table, th, td{
+    border-collapse: collapse;
+    padding: 1rem;
+    padding-left: 25px;
+}
+.profitandlose-container .prolosetable-container thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(132, 148, 167, 0.966);
+    color: rgba(12, 12, 12, 0.808);
+    font-size: 91%;
+    padding-left: 9.6px;
+}
+.profitandlose-container .prolosetable-container::-webkit-scrollbar{
+    width:0.6rem;
+    height:0.4rem;
+}
+.profitandlose-container .prolosetable-container::-webkit-scrollbar-thumb{
+   background-color: rgba(34, 26, 26, 0.199);
+}
+.profitandlose-container .prolosetable-container td{
+    padding-left: 9.6px;
+}
+.prolosetable-container tbody tr:nth-child(even){
+    background-color: #8295b8a9;
+}
+.profitandlose-container .prolosetable-container::-webkit-scrollbar{
+    width:0.6rem;
+    height:0.4rem;
+}
+.profitandlose-container .prolosetable-container::-webkit-scrollbar-thumb{
+   background-color: rgba(34, 26, 26, 0.199);
+}
+/*business sidebar profit and lose graph style/css code*/
+.profitandlose-container .prolosegraph-container{
+    background-color: rgba(159, 168, 179, 0.966);
+    width: 702px;
+    height: 210px;
+}

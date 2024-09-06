@@ -1,0 +1,329 @@
+/* delivery mainbar style/css*/
+.delivery-container{
+    display: flex;
+    margin-top: 25px;
+    width: 100%;
+    height: 100%;
+}
+
+.deliverymainbar-container{
+    background-color: rgb(163, 165, 165);
+    width: 170px;
+    height: 170px;
+}
+/* delivery mainbar button style/css code*/
+.deliverymainbar-container button{
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    background-color: rgb(79, 104, 107);
+    color: white;
+    border-radius:2px;
+    cursor: pointer;
+}
+.deliverymainbar-container  button:hover{
+    background-color: rgb(24, 124, 124);
+    transition: 60ms;
+}
+.deliverymainbar-container button:active{
+    background-color: rgb(24, 67, 124);
+}
+/* table main button table css/style code*/
+.deliverysidebar-container{
+    margin-left: 53px;
+}
+.maindeliverinfo-container .generalinfotable-container{
+    background-color: #8295b84b;
+    margin-top: 5px;
+    width: 702px;
+    height: 200px;
+    overflow: auto; 
+}
+.maindeliverinfo-container  .generalinfotable-container table, th, td{
+    border-collapse: collapse;
+    padding: 1rem;
+    padding-left: 25px;
+}
+.maindeliverinfo-container .generalinfotable-container thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(158, 167, 132, 0.966);
+    color: rgba(12, 12, 12, 0.808);
+    font-size: 91%;
+    padding-left: 28px;
+}
+.maindeliverinfo-container .generalinfotable-container td{
+    padding-left: 28px; 
+}
+.maindeliverinfo-container .generalinfotable-container::-webkit-scrollbar{
+    width:0.5rem;
+    height:0.4rem;
+}
+.maindeliverinfo-container .generalinfotable-container::-webkit-scrollbar-thumb{
+   background-color: rgba(34, 26, 26, 0.199);
+}
+.generalinfotable-container tbody tr:nth-child(even){
+    background-color: #8295b8a9;
+}
+.infoP-container p{
+    background-color: rgba(159, 182, 224, 0.966);
+    width: 200px;
+    height: 20px;
+    display: flex;
+    border-radius: 2px;
+    justify-content: center;
+    align-items: center;
+}
+.maindeliverinfo-container .todayinfotable-container{
+    background-color: #8295b84b;
+    margin-top: 10px;
+    width: 702px;
+    height: 350px;
+    overflow: auto; 
+}
+.maindeliverinfo-container .todayinfotable-container thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(172, 203, 185, 0.966);
+    color: rgba(12, 12, 12, 0.808);
+    padding-left: 8.6px;
+    font-size:91%;
+}
+.maindeliverinfo-container .todayinfotable-container td{
+    padding-left: 12.6px;
+}
+.maindeliverinfo-container .todayinfotable-container::-webkit-scrollbar{
+    width:0.5rem;
+    height:0.4rem;
+}
+.maindeliverinfo-container .todayinfotable-container::-webkit-scrollbar-thumb{
+   background-color: rgba(34, 26, 26, 0.199);
+}
+.maindeliverinfo-container .todayinfotable-container table, th, td{
+    border-collapse: collapse;
+    padding: 1rem;
+}
+.todayinfotable-container tbody tr:nth-child(even){
+    background-color: #8295b8a9;
+} 
+/* add deliver button css/style code */
+
+.adddeliver-container .doneinfo-container{
+    background-color: rgba(152, 214, 193, 0.767);
+    width: 702px;
+    height: 170px;
+}
+.adddeliver-container .forminfo-container{
+    margin-top: 10px;
+    background-color: rgba(155, 179, 224, 0.555);
+    padding: 15px;
+    color: rgb(46, 45, 45);
+}
+.adddeliver-container .forminput-container input{
+    width: 300px;
+    height: 30px;
+    border: none;
+    background-color: rgba(229, 231, 231, 0.87);
+    border-radius: 2px;
+    margin-top: 5px;
+    padding-left: 10px;
+    margin-top: 15px;
+    outline: none;
+}
+.adddeliver-container .forminput-container button{
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgba(122, 158, 146, 0.767);
+    color: white;
+    cursor: pointer;
+}
+
+/* fulldeliverinfo button css/style code */
+.fulldeliverinfo-container .sbranches-container .searche-container input{
+    width: 690px;
+    height: 30px;
+    border: none;
+    background-color: rgb(205, 170, 207);
+    border-radius: 2px;
+    margin-top: 5px;
+    padding-left: 10px;
+    outline: none;
+    color: white;
+}
+  /* sidebar table style/css*/
+.fulldeliverinfo-container .sbranches-container .table-container{
+    background-color: #8295b84b;
+      margin-top: 5px;
+      width: 702px;
+      height: 250px;
+      overflow: auto; 
+  }
+  .fulldeliverinfo-container .sbranches-container .table-container::-webkit-scrollbar{
+      width:0.5rem;
+      height:0.4rem;
+  }
+  .fulldeliverinfo-container .sbranches-container .table-container::-webkit-scrollbar-thumb{
+     background-color: rgba(34, 26, 26, 0.199);
+  }
+  .fulldeliverinfo-container .sbranches-container table, th, td{
+      padding: 1rem; 
+  
+  }
+  .fulldeliverinfo-container .sbranches-container  table, th, td{
+      border-collapse: collapse;
+      padding: 1rem;
+  }
+  .fulldeliverinfo-container .sbranches-container  tr:hover{
+      background-color: rgb(144, 143, 148);
+      transition: 60ms;
+  }
+  .fulldeliverinfo-container .sbranches-container  tr:active{
+      background-color: rgb(150, 139, 192);
+      transition: 60ms;
+  }
+  .fulldeliverinfo-container .sbranches-container thead th{
+      position: sticky;
+      top: 0;
+      left: 0;
+      background-color: rgba(178, 206, 216, 0.966);
+      color: rgba(12, 12, 12, 0.808);
+      font-size: 94%;
+      padding-left: 14.9px;
+  }
+  .fulldeliverinfo-container .sbranches-container td{
+      padding-left: 14.9px;
+      font-size: 91%;
+  }
+  .sbranches-container tbody tr:nth-child(even){
+      background-color: #8295b8a9;
+  }
+  /* maininfo style/css code*/
+  .fulldeliverinfo-container .maininfo-container{
+      width: 702px;
+      height: 300px;
+      background-color: rgb(208, 241, 235);
+  }
+  /* status style/css code*/
+  .fulldeliverinfo-container .status-container{
+      width: 702px;
+      height: 300px;
+      background-color: white;
+  }
+  .managedelivery-button{
+    background-color:rgba(152, 114, 293, 0.767);
+    outline: none;
+    border:none;
+    margin-left:580px;
+    margin-top:230px;
+    width:110px;
+    height:30px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.managedelivery-buttoncontainer button:hover{
+    background-color:rgb(24, 124, 124);
+    transition: 60ms;
+}
+.managedelivery-buttoncontainer button:active{
+    background-color: rgb(24, 67, 124);
+}
+.updatedelivery-container{
+    display: flex;
+}
+.updatedeliveryinput-container input{
+    width: 220px;
+    height: 30px;
+    border: none;
+    background-color: rgba(229, 231, 231, 0.87);
+    border-radius: 2px;
+    padding-left: 15px;
+    margin-top: 15px;
+    margin-left: -1px;
+    outline: none;
+}
+.updatedeliveryinput-container p{
+    background-color:rgba(206, 178, 216, 0.966);
+    width: 300px;
+    height: 20px;
+    text-align: center;
+    padding-top: 5px;
+}
+.updatedeliveryImg-container{
+    position: relative;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    margin-left: 250px;
+    margin-top: 11px;
+    margin-right: -20px;
+}
+.slide{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+/* delivered product css/style code*/
+/* delivered product table css/style code*/
+.deliveredproducts-container .productstable-container{
+    background-color: #8295b84b;
+      margin-top: 5px;
+      width: 702px;
+      height: 250px;
+      overflow: auto; 
+  }
+  .deliveredproducts-container .productstable-container::-webkit-scrollbar{
+      width:0.5rem;
+      height:0.4rem;
+  }
+  .deliveredproducts-container .productstable-container::-webkit-scrollbar-thumb{
+     background-color: rgba(34, 26, 26, 0.199);
+  }
+  .deliveredproducts-container .productstable-container table, th, td{
+      padding: 1rem; 
+  
+  }
+  .deliveredproducts-container .productstable-container  table, th, td{
+      border-collapse: collapse;
+      padding: 1rem;
+  }
+  .deliveredproducts-container .productstable-container  tr:hover{
+      background-color: rgb(144, 143, 148);
+      transition: 60ms;
+  }
+  .deliveredproducts-container .productstable-container tr:active{
+      background-color: rgb(150, 139, 192);
+      transition: 60ms;
+  }
+  .deliveredproducts-container .productstable-container thead th{
+      position: sticky;
+      top: 0;
+      left: 0;
+      background-color: rgba(178, 206, 216, 0.966);
+      color: rgba(12, 12, 12, 0.808);
+      font-size: 94%;
+      padding-left: 14.9px;
+  }
+  .deliveredproducts-container .productstable-container td{
+      padding-left: 14.9px;
+      font-size: 91%;
+  }
+  .productstable-container tbody tr:nth-child(even){
+      background-color: #8295b8a9;
+  }
+  /* delivered product graph css/style code*/
+  .deliveredproducts-container .productsgraph-container{
+    width: 702px;
+    height: 300px;
+    background-color: rgb(148, 170, 166);
+}

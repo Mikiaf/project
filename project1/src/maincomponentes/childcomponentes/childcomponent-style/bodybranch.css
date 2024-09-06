@@ -1,0 +1,358 @@
+.branch-container{
+    width: 100%;
+    height: 100%;
+    margin-top: 25px;
+    display: flex;
+}
+
+/*
+
+ mainbar style//css code
+*/
+.branchmainbar-container{
+    background-color: rgb(163, 165, 165);
+    width: 170px;
+    height: 170px;
+}
+.branchmainbar-container button{
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    background-color: rgb(79, 104, 107);
+    color: white;
+    border-radius:2px;
+    cursor: pointer;
+}
+
+.branchmainbar-container button:hover{
+    background-color: rgb(24, 124, 124);
+    transition: 60ms;
+}
+
+.branchmainbar-container button:active{
+    background-color: rgb(24, 67, 124);
+}
+/* ######################
+   fullbranch button style/css code*/
+/* sidebar style//css code*/
+.branchsidebar-container{
+    margin-left: 53px;
+}
+
+/* sidebar input style/css*/
+.fullbranchinfo-container .sbranches-container .searche-container input{
+    width: 690px;
+    height: 30px;
+    border: none;
+    background-color: rgb(170, 207, 207);
+    border-radius: 2px;
+    margin-top: 5px;
+    padding-left: 10px;
+    outline: none;
+}
+/* sidebar table style/css*/
+.fullbranchinfo-container .sbranches-container .table-container{
+  background-color: #8295b84b;
+    margin-top: 5px;
+    width: 702px;
+    height: 250px;
+    overflow: auto; 
+}
+.fullbranchinfo-container .sbranches-container .table-container::-webkit-scrollbar{
+    width:0.5rem;
+    height:0.4rem;
+}
+.fullbranchinfo-container .sbranches-container .table-container::-webkit-scrollbar-thumb{
+   background-color: rgba(34, 26, 26, 0.199);
+}
+
+.fullbranchinfo-container .sbranches-container table, th, td{
+    padding: 1rem; 
+
+}
+.fullbranchinfo-container .sbranches-container  table, th, td{
+    border-collapse: collapse;
+    padding: 1rem;
+}
+.fullbranchinfo-container .sbranches-container  tr:hover{
+    background-color: rgb(144, 143, 148);
+    transition: 60ms;
+}
+.fullbranchinfo-container .sbranches-container  tr:active{
+    background-color: rgb(150, 139, 192);
+    transition: 60ms;
+}
+.fullbranchinfo-container .sbranches-container thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(206, 178, 216, 0.966);
+    color: rgba(12, 12, 12, 0.808);
+    padding-left: 14px;
+}
+.fullbranchinfo-container .sbranches-container td{
+    padding-left: 14px;
+    font-size: 91%;
+}
+.sbranches-container tbody tr:nth-child(even){
+    background-color: #8295b8a9;
+}
+/* maininfo style/css code*/
+.fullbranchinfo-container .maininfo-container{
+    width: 702px;
+    height: 300px;
+    background-color: rgb(208, 241, 235);
+}
+/* status style/css code*/
+.fullbranchinfo-container .status-container{
+    width: 702px;
+    height: 300px;
+    background-color: white;
+}
+.managebranch-button{
+    background-color:rgba(152, 114, 293, 0.767);
+    outline: none;
+    border:none;
+    margin-left:580px;
+    margin-top:230px;
+    width:110px;
+    height:30px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.managebranch-buttoncontainer button:hover{
+    background-color:rgb(24, 124, 124);
+    transition: 60ms;
+}
+.managebranch-buttoncontainer button:active{
+    background-color: rgb(24, 67, 124);
+}
+.updatebranch-container{
+    display: flex;
+}
+.updatebranchinput-container input{
+    width: 220px;
+    height: 30px;
+    border: none;
+    background-color: rgba(229, 231, 231, 0.87);
+    border-radius: 2px;
+    padding-left: 15px;
+    margin-top: 15px;
+    margin-left: -1px;
+    outline: none;
+}
+.updatebranchinput-container p{
+    background-color:rgba(206, 178, 216, 0.966);
+    width: 300px;
+    height: 20px;
+    text-align: center;
+    padding-top: 5px;
+}
+.updatebranchImg-container{
+    position: relative;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    margin-left: 250px;
+    margin-top: 11px;
+    margin-right: -20px;
+}
+.slide{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/*##################################
+    main button style/css code
+*/
+/* generalinfoTable style/css code*/
+.mainbranchinfo-container .generalinfoTable-container{
+    background-color: #8295b84b;
+    margin-top: 5px;
+    width: 702px;
+    height: 200px;
+    overflow: auto; 
+}
+.mainbranchinfo-container .generalinfoTable-container::-webkit-scrollbar{
+    width:0.6rem;
+    height:0.4rem;
+}
+.mainbranchinfo-container .generalinfoTable-container::-webkit-scrollbar-thumb{
+   background-color:rgba(34, 26, 26, 0.199);;
+}
+.mainbranchinfo-container .generalinfoTable-container table, th, td{
+    padding: 1rem; 
+}
+.mainbranchinfo-container .generalinfoTable-container table, th, td{
+    border-collapse: collapse;
+    padding: 1rem;
+}
+.mainbranchinfo-container .generalinfoTable-container thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(159, 182, 224, 0.966);
+    color: rgba(12, 12, 12, 0.808);
+    padding-left: 12px
+}
+.mainbranchinfo-container .generalinfoTable-container td{
+    padding-left: 12px;
+}
+.generalinfoTable-container tbody tr:nth-child(even){
+    background-color: #8295b8a9;
+}
+.generalinfoP-container p{
+    background-color: rgba(159, 182, 224, 0.966);
+    width: 200px;
+    height: 20px;
+    display: flex;
+    border-radius: 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* todayinfoTable style/css code*/
+.mainbranchinfo-container .todayinfoTable-container{
+    background-color: #8295b84b;
+    margin-top: 10px;
+    width: 702px;
+    height: 350px;
+    overflow: auto; 
+}
+.mainbranchinfo-container .todayinfoTable-container::-webkit-scrollbar{
+    width:0.6rem;
+    height:0.4rem;
+}
+.mainbranchinfo-container .todayinfoTable-container::-webkit-scrollbar-thumb{
+   background-color: rgba(34, 26, 26, 0.199);
+}
+.mainbranchinfo-container .todayinfoTable-container table, th, td{
+    padding: 1rem; 
+}
+.mainbranchinfo-container .todayinfoTable-container table, th, td{
+    border-collapse: collapse;
+    padding: 1rem;
+}
+.mainbranchinfo-container .todayinfoTable-container thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(211, 159, 224, 0.966);
+    color: rgba(12, 12, 12, 0.808);
+    padding-left: 2.1px;
+}
+.mainbranchinfo-container .todayinfoTable-container td{
+    padding-left: 12.5px;
+}
+.todayinfoTable-container tbody tr:nth-child(even){
+    background-color: #8295b8a9;
+}
+.todayinfoP-container p{
+    background-color: rgba(211, 159, 224, 0.966);
+    width: 200px;
+    height: 20px;
+    display: flex;
+    border-radius: 2px;
+    justify-content: center;
+    align-items: center;
+}
+/*##################################
+    addbranch button style/css code
+*/
+/* doneinfos style/css code*/
+.addbranch-container .submitedinfo-container{
+    background-color: rgba(152, 214, 193, 0.767);
+    width: 702px;
+    height: 170px;
+}
+/* forminfo style/css code*/
+.addbranch-container .forminfo-container{
+    margin-top: 10px;
+    background-color: rgba(155, 179, 224, 0.555);
+    padding: 15px;
+    color: rgb(46, 45, 45);
+}
+.addbranch-container .forminfo-container input{
+    width: 300px;
+    height: 30px;
+    border: none;
+    background-color: rgba(229, 231, 231, 0.87);
+    border-radius: 2px;
+    margin-top: 5px;
+    padding-left: 10px;
+    margin-top: 15px;
+    outline: none;
+}
+.addbranch-container .forminfo-container button{
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgba(122, 158, 146, 0.767);
+    color: white;
+    cursor: pointer;
+}
+.addbranch-container .forminfo-container button:hover{
+    background-color: rgb(170, 130, 207);
+}
+.addbranch-container  .formimage-container{
+    display: flex;
+    width: 200px;
+    height: 215px;
+    margin-left: 130px;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+    border: solid rgb(90, 113, 214) 1px;
+}
+/*accepted products css/style code */
+/* accepted products status in tables css/style code*/
+.acceptedproducts-container .productstable-container{
+    background-color: #8295b84b;
+    margin-top: 10px;
+    width: 702px;
+    height: 350px;
+    overflow: auto; 
+}
+.acceptedproducts-container .productstable-container::-webkit-scrollbar{
+    width:0.6rem;
+    height:0.4rem;
+}
+.acceptedproducts-container .productstable-container::-webkit-scrollbar-thumb{
+   background-color: rgba(34, 26, 26, 0.199);
+}
+.acceptedproducts-container .productstable-container table, th, td{
+    padding: 1rem; 
+}
+.acceptedproducts-container .productstable-container table, th, td{
+    border-collapse: collapse;
+    padding: 1rem;
+}
+.acceptedproducts-container .productstable-container thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(211, 159, 224, 0.966);
+    color: rgba(12, 12, 12, 0.808);
+    padding-left: 10.1px;
+}
+.acceptedproducts-container .productstable-container td{
+    padding-left: 12.5px;
+}
+.productstable-container tbody tr:nth-child(even){
+    background-color: #8295b8a9;
+}
+/* accepted products status in graph css/style code*/
+.acceptedproducts-container  .productsgraph-container{
+    background-color: rgba(152, 214, 193, 0.767);
+    width: 702px;
+    height: 210px;
+}

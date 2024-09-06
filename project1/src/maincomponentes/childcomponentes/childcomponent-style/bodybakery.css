@@ -1,0 +1,328 @@
+.bekery-container{
+    display: flex;
+    margin-top: 25px;
+    width: 100%;
+    height: 100%;
+}
+.bekerymainbar-container{
+    background-color: rgb(163, 165, 165);
+    width: 170px;
+    height: 170px;
+}
+/* bekery mainbar button style/css code*/
+.bekerymainbar-container button{
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    background-color: rgb(79, 104, 107);
+    color: white;
+    border-radius:2px;
+    cursor: pointer;
+}
+.bekerymainbar-container  button:hover{
+    background-color: rgb(24, 124, 124);
+    transition: 60ms;
+}
+.bekerymainbar-container button:active{
+    background-color: rgb(24, 67, 124);
+}
+/* bekery sidebar style/css code*/
+.bekerysidebar-container{
+    margin-left: 53px;
+}
+/* bekery sidebarmain button style/css code*/
+.mainbekeryinfo-container .generalinfotable-container{
+    background-color: #8295b84b;
+    margin-top: 5px;
+    width: 702px;
+    height: 200px;
+    overflow: auto; 
+}
+.mainbekeryinfo-container  .generalinfotable-container table, th, td{
+    border-collapse: collapse;
+    padding: 1rem;
+}
+.mainbekeryinfo-container .generalinfotable-container thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(158, 167, 132, 0.966);
+    color: rgba(12, 12, 12, 0.808);
+    padding-left: 17.8px;
+}
+.mainbekeryinfo-container  .generalinfotable-container td{
+    padding-left: 17.8px;
+}
+.generalinfotable-container tbody tr:nth-child(even){
+    background-color: #8295b8a9;
+}
+.mainbekeryinfo-container .generalinfotable-container::-webkit-scrollbar{
+    width:0.6rem;
+    height:0.4rem;
+}
+.mainbekeryinfo-container .generalinfotable-container::-webkit-scrollbar-thumb{
+   background-color:rgba(34, 26, 26, 0.199);;
+}
+.mainbekeryinfo-container .todayinfotable-container{
+    background-color: #8295b84b;
+    margin-top: 10px;
+    width: 702px;
+    height: 350px;
+    overflow: auto; 
+}
+.mainbekeryinfo-container .todayinfotable-container thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(172, 203, 185, 0.966);
+    color: rgba(12, 12, 12, 0.808);
+    padding-left: 21.5px;
+}
+.mainbekeryinfo-container  .todayinfotable-container td{
+    padding-left: 21.5px;
+}
+.mainbekeryinfo-container  .todayinfotable-container::-webkit-scrollbar{
+    width:0.6rem;
+    height:0.4rem;
+}
+.mainbekeryinfo-container  .todayinfotable-container::-webkit-scrollbar-thumb{
+   background-color:rgba(34, 26, 26, 0.199);;
+}
+.mainbekeryinfo-container .todayinfotable-container table, th, td{
+    border-collapse: collapse;
+    padding: 1rem;
+}
+.todayinfotable-container tbody tr:nth-child(even){
+    background-color: #8295b8a9;
+}
+/* addbekery style/css code*/
+.addbekery-container .submitedinfo-container{
+    background-color: rgba(152, 214, 193, 0.767);
+    width: 702px;
+    height: 170px;
+}
+/* forminfo style/css code*/
+.addbekery-container .forminfo-container{
+    margin-top: 10px;
+    background-color: rgba(155, 179, 224, 0.555);
+    padding: 15px;
+    color: rgb(46, 45, 45);
+}
+.addbekery-container .forminfo-container input{
+    width: 300px;
+    height: 30px;
+    border: none;
+    background-color: rgba(229, 231, 231, 0.87);
+    border-radius: 2px;
+    margin-top: 5px;
+    padding-left: 10px;
+    margin-top: 15px;
+    outline: none;
+}
+.addbekery-container .forminfo-container button{
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgba(122, 158, 146, 0.767);
+    color: white;
+    cursor: pointer;
+}
+.addbekery-container .forminfo-container button:hover{
+    background-color: rgb(170, 130, 207);
+}
+.addbekery-container  .formimage-container{
+    display: flex;
+    width: 200px;
+    height: 215px;
+    margin-left: 130px;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+    border: solid rgb(90, 113, 214) 1px;
+}
+/* fullbekeryinfo style/css code */
+
+
+/* sidebar input style/css*/
+.fullbekeryinfo-container .sbranches-container .searche-container input{
+    width: 690px;
+    height: 30px;
+    border: none;
+    background-color: rgb(170, 207, 207);
+    border-radius: 2px;
+    margin-top: 5px;
+    padding-left: 10px;
+    outline: none;
+}
+/* sidebar table style/css*/
+.fullbekeryinfo-container .sbranches-container .table-container{
+  background-color: #8295b84b;
+    margin-top: 5px;
+    width: 702px;
+    height: 250px;
+    overflow: auto; 
+}
+.fullbekeryinfo-container .sbranches-container .table-container::-webkit-scrollbar{
+    width:0.5rem;
+    height:0.4rem;
+}
+.fullbekeryinfo-container .sbranches-container .table-container::-webkit-scrollbar-thumb{
+   background-color: rgba(34, 26, 26, 0.199);
+}
+
+.fullbekeryinfo-container .sbranches-container table, th, td{
+    padding: 1rem; 
+
+}
+.fullbekeryinfo-container .sbranches-container  table, th, td{
+    border-collapse: collapse;
+    padding: 1rem;
+}
+.fullbekeryinfo-container .sbranches-container  tr:hover{
+    background-color: rgb(144, 143, 148);
+    transition: 60ms;
+}
+.fullbekeryinfo-container .sbranches-container  tr:active{
+    background-color: rgb(150, 139, 192);
+    transition: 60ms;
+}
+.fullbekeryinfo-container .sbranches-container thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(206, 178, 216, 0.966);
+    color: rgba(12, 12, 12, 0.808);
+    padding-left: 20.9px;
+}
+.fullbekeryinfo-container .sbranches-container td{
+    padding-left: 20.9px;
+    font-size: 91%;
+}
+.sbranches-container tbody tr:nth-child(even){
+    background-color: #8295b8a9;
+}
+/* maininfo style/css code*/
+.fullbekeryinfo-container .maininfo-container{
+    width: 702px;
+    height: 300px;
+    background-color: rgb(208, 241, 235);
+}
+/* status style/css code*/
+.fullbekeryinfo-container .status-container{
+    width: 702px;
+    height: 300px;
+    background-color: white;
+}
+.managebekery-button{
+    background-color:rgba(152, 114, 293, 0.767);
+    outline: none;
+    border:none;
+    margin-left:580px;
+    margin-top:230px;
+    width:110px;
+    height:30px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.managebekery-buttoncontainer button:hover{
+    background-color:rgb(24, 124, 124);
+    transition: 60ms;
+}
+.managebekery-buttoncontainer button:active{
+    background-color: rgb(24, 67, 124);
+}
+.updatebekery-container{
+    display: flex;
+}
+.updatebekeryinput-container input{
+    width: 220px;
+    height: 30px;
+    border: none;
+    background-color: rgba(229, 231, 231, 0.87);
+    border-radius: 2px;
+    padding-left: 15px;
+    margin-top: 15px;
+    margin-left: -1px;
+    outline: none;
+}
+.updatebekeryinput-container p{
+    background-color:rgba(206, 178, 216, 0.966);
+    width: 300px;
+    height: 20px;
+    text-align: center;
+    padding-top: 5px;
+}
+.updatebekeryImg-container{
+    width: 250px;
+    height: 250px;
+    margin-left: 250px;
+    margin-top: 11px;
+    margin-right: -20px;
+}
+.slide{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+/* bakery products  css/style code*/
+/*bakery products table css/style code*/
+.bakedproducts-container .productstable-container{
+    background-color: #8295b84b;
+      margin-top: 5px;
+      width: 702px;
+      height: 250px;
+      overflow: auto; 
+  }
+  .bakedproducts-container .productstable-container::-webkit-scrollbar{
+      width:0.5rem;
+      height:0.4rem;
+  }
+  .bakedproducts-container .productstable-container::-webkit-scrollbar-thumb{
+     background-color: rgba(34, 26, 26, 0.199);
+  }
+  
+  .bakedproducts-container .productstable-container table, th, td{
+      padding: 1rem; 
+  
+  }
+  .bakedproducts-container .productstable-container  table, th, td{
+      border-collapse: collapse;
+      padding: 1rem;
+  }
+  .bakedproducts-container .productstable-container  tr:hover{
+      background-color: rgb(144, 143, 148);
+      transition: 60ms;
+  }
+  .bakedproducts-container .productstable-container  tr:active{
+      background-color: rgb(150, 139, 192);
+      transition: 60ms;
+  }
+  .bakedproducts-container .productstable-container thead th{
+      position: sticky;
+      top: 0;
+      left: 0;
+      background-color: rgba(206, 178, 216, 0.966);
+      color: rgba(12, 12, 12, 0.808);
+      padding-left: 17.9px;
+  }
+  .bakedproducts-container .productstable-container td{
+      padding-left: 17.9px;
+      font-size: 91%;
+  }
+  .productstable-container tbody tr:nth-child(even){
+      background-color: #8295b8a9;
+  }
+  /*bakery products graph css/style code*/
+  .bakedproducts-container .productsgraph-container{
+    width: 702px;
+    height: 300px;
+    background-color: rgb(148, 170, 166);
+  }
