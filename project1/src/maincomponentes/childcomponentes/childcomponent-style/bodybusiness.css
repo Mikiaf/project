@@ -7,7 +7,7 @@
 .businessmainbar-container{
     background-color: rgb(163, 165, 165);
     width: 170px;
-    height: 170px;
+    height: 290px;
 }
 /* business mainbar button style/css code*/
 .businessmainbar-container button{
@@ -282,6 +282,152 @@
 }
 /*business sidebar profit and lose graph style/css code*/
 .profitandlose-container .prolosegraph-container{
+    background-color: rgba(159, 168, 179, 0.966);
+    width: 702px;
+    height: 210px;
+}
+
+/*business sidebar order style/css code*/
+.order-conatainer .orderinfoTable-container{
+    background-color: #8295b84b;
+    margin-top: 5px;
+    width: 702px;
+    height: 300px;
+    overflow: auto; 
+}
+.order-conatainer .orderinfoTable-container table, th, td{
+    border-collapse: collapse;
+    padding: 1rem;
+    padding-left: 25px;
+}
+.order-conatainer .orderinfoTable-container thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(132, 148, 167, 0.966);
+    color: rgba(12, 12, 12, 0.808);
+    font-size: 91%;
+    padding-left: 9.6px;
+}
+.order-conatainer .orderinfoTable-container::-webkit-scrollbar{
+    width:0.6rem;
+    height:0.4rem;
+}
+.order-conatainer .orderinfoTable-container::-webkit-scrollbar-thumb{
+   background-color: rgba(34, 26, 26, 0.199);
+}
+.order-conatainer .orderinfoTable-container td{
+    padding-left: 9.6px;
+}
+.prolosetable-container tbody tr:nth-child(even){
+    background-color: #8295b8a9;
+}
+.order-conatainer .orderinfoTable-container::-webkit-scrollbar{
+    width:0.6rem;
+    height:0.4rem;
+}
+.order-conatainer .orderinfoTable-container::-webkit-scrollbar-thumb{
+   background-color: rgba(34, 26, 26, 0.199);
+}
+/*business sidebar order graph style/css code*/
+.order-conatainer .ordergraph-container{
+    background-color: rgba(159, 168, 179, 0.966);
+    width: 702px;
+    height: 210px;
+}
+/*business sidebar cost graph style/css code*/
+.cost-conatainer .costinfoTable-container{
+    background-color: #8295b84b;
+    margin-top: 5px;
+    width: 702px;
+    height: 300px;
+    overflow: auto; 
+}
+.cost-conatainer .costinfoTable-container table, th, td{
+    border-collapse: collapse;
+    padding: 1rem;
+    padding-left: 25px;
+}
+.cost-conatainer .costinfoTable-container thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(132, 148, 167, 0.966);
+    color: rgba(12, 12, 12, 0.808);
+    font-size: 91%;
+    padding-left: 9.6px;
+}
+.cost-conatainer .costinfoTable-container::-webkit-scrollbar{
+    width:0.6rem;
+    height:0.4rem;
+}
+.cost-conatainer .costinfoTable-container::-webkit-scrollbar-thumb{
+   background-color: rgba(34, 26, 26, 0.199);
+}
+.cost-conatainer .costinfoTable-container td{
+    padding-left: 9.6px;
+}
+.prolosetable-container tbody tr:nth-child(even){
+    background-color: #8295b8a9;
+}
+.cost-conatainer .costinfoTable-container::-webkit-scrollbar{
+    width:0.6rem;
+    height:0.4rem;
+}
+.cost-conatainer .costinfoTable-container::-webkit-scrollbar-thumb{
+   background-color: rgba(34, 26, 26, 0.199);
+}
+/*business sidebar cost graph style/css code*/
+.cost-conatainer .costgraph-container{
+    background-color: rgba(159, 168, 179, 0.966);
+    width: 702px;
+    height: 210px;
+}
+
+/*business sidebar connection graph style/css code*/
+.connection-conatainer .connectioninfoTable-container{
+    background-color: #8295b84b;
+    margin-top: 5px;
+    width: 702px;
+    height: 300px;
+    overflow: auto; 
+}
+.connection-conatainer .connectioninfoTable-container table, th, td{
+    border-collapse: collapse;
+    padding: 1rem;
+    padding-left: 25px;
+}
+.connection-conatainer .connectioninfoTable-container thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(132, 148, 167, 0.966);
+    color: rgba(12, 12, 12, 0.808);
+    font-size: 91%;
+    padding-left: 9.6px;
+}
+.connection-conatainer .connectioninfoTable-container::-webkit-scrollbar{
+    width:0.6rem;
+    height:0.4rem;
+}
+.connection-conatainer .connectioninfoTable-container::-webkit-scrollbar-thumb{
+   background-color: rgba(34, 26, 26, 0.199);
+}
+.connection-conatainer .connectioninfoTable-container td{
+    padding-left: 9.6px;
+}
+.prolosetable-container tbody tr:nth-child(even){
+    background-color: #8295b8a9;
+}
+.connection-conatainer .connectioninfoTable-container::-webkit-scrollbar{
+    width:0.6rem;
+    height:0.4rem;
+}
+.connection-conatainer .connectioninfoTable-container::-webkit-scrollbar-thumb{
+   background-color: rgba(34, 26, 26, 0.199);
+}
+/*business sidebar connection graph style/css code*/
+.connection-conatainer .connectiongraph-container{
     background-color: rgba(159, 168, 179, 0.966);
     width: 702px;
     height: 210px;

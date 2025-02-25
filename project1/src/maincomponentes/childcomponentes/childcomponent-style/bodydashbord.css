@@ -1,0 +1,354 @@
+.dashbord-container{
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+}
+.dashbord-container .sidebarbutton-container{
+    margin-bottom: 10px;
+    margin-left: 397px;
+}
+.dashbord-container .sidebarbutton-container button{
+    width: 100px;
+    height: 30px;
+    margin-left: 5px;
+    background-color: rgb(65, 170, 112);
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.sidebarbutton-container button:hover{
+    background-color:rgb(24, 124, 124);
+    transition: 60ms;
+}
+.sidebarbutton-container button:active{
+    background-color: rgb(24, 67, 124);
+}
+/* live action style/css code**/
+.liveactionstatus-container{
+    display: flex;
+}
+.liveactionstatus-container .notification-container{
+
+    width: 300px;
+    height: 200px;
+    background-color: rgba(159, 182, 224, 0.966);
+
+}
+/*live action actionstatus transaction table style/css code**/
+.liveactionstatus-container .actionstatus-container{
+    width: 500px;
+    height: 200px;
+    margin-left: 102px;
+}
+.actionstatus-container button{
+    margin-bottom: 10px;
+}
+.actionstatus-container .transaction-btn{
+    width: 100px;
+    height: 30px;
+    background-color: rgba(152, 114, 293, 0.767);
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.actionstatus-container .sales-btn{
+    width: 100px;
+    height: 30px;
+    margin-left: 5px;
+    background-color: rgba(152, 114, 293, 0.767);
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.actionstatus-container button:hover{
+    background-color:rgb(24, 124, 124);
+    transition: 60ms;
+}
+.actionstatus-container button:active{
+    background-color: rgb(24, 67, 124);
+}
+.actionstatus-container .transactiontable-container{
+    background-color: #8295b84b;
+    width: 523px;
+    height: 200px;
+    overflow: auto; 
+}
+.actionstatus-container .transactiontable-container::-webkit-scrollbar{
+    width:0.6rem;
+    height:0.4rem;
+}
+.actionstatus-container .transactiontable-container::-webkit-scrollbar-thumb{
+   background-color:rgba(34, 26, 26, 0.199);;
+}
+.actionstatus-container .transactiontable-container table, th, td{
+    padding: 1rem; 
+}
+.actionstatus-container .transactiontable-container table, th, td{
+    border-collapse: collapse;
+    padding: 1rem;
+}
+.actionstatus-container .transactiontable-container thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(159, 182, 224, 0.966);    
+    color: rgba(12, 12, 12, 0.808);
+    padding-left: 20px
+}
+.actionstatus-container .transactiontable-container td{
+    padding-left: 20px;
+}
+.transactiontable-container tbody tr:nth-child(even){
+    background-color: #8295b8a9;
+}
+.generalinfoP-container p{
+    background-color: rgba(159, 182, 224, 0.966);
+    width: 200px;
+    height: 20px;
+    display: flex;
+    border-radius: 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+/*live action actionstatus sales table style/css code**/
+
+.actionstatus-container .salestable-container{
+    background-color: #8295b84b;
+    width: 523px;
+    height: 200px;
+    overflow: auto; 
+}
+.actionstatus-container .salestable-container::-webkit-scrollbar{
+    width:0.6rem;
+    height:0.4rem;
+}
+.actionstatus-container .salestable-container::-webkit-scrollbar-thumb{
+   background-color:rgba(34, 26, 26, 0.199);;
+}
+.actionstatus-container .salestable-container table, th, td{
+    padding: 1rem; 
+}
+.actionstatus-container .salestable-container table, th, td{
+    border-collapse: collapse;
+    padding: 1rem;
+}
+.actionstatus-container .salestable-container thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(224, 169, 159, 0.966);    
+    color: rgba(12, 12, 12, 0.808);
+    padding-left: 20px
+}
+.actionstatus-container .salestable-container td{
+    padding-left: 20px;
+}
+.salestable-container tbody tr:nth-child(even){
+    background-color: #d12e12c7;
+}
+.generalinfoP-container p{
+    background-color: rgba(159, 182, 224, 0.966);
+    width: 200px;
+    height: 20px;
+    display: flex;
+    border-radius: 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+  bussioess status style/css code  
+**/
+.bussinessstatus-container{
+    display: flex;
+    margin-top: 25px;
+}
+.bussinessstatus-container .graph-container{
+    width: 300px;
+    height: 200px;
+    background-color: rgba(159, 182, 224, 0.966);
+}
+/*
+bussiness status branch status table style/css
+**/
+.bussinessstatus-container .branchstatus-container{
+    width: 500px;
+    height: 200px;
+    margin-left: 102px;
+    margin-top: 25px;
+}
+.bussinessstatus-container .branchstatus-container{
+    background-color: #8295b84b;
+    width: 523px;
+    height: 200px;
+    overflow: auto; 
+}
+.bussinessstatus-container .branchstatus-container::-webkit-scrollbar{
+    width:0.6rem;
+    height:0.4rem;
+}
+.bussinessstatus-container .branchstatus-container::-webkit-scrollbar-thumb{
+   background-color:rgba(34, 26, 26, 0.199);;
+}
+.bussinessstatus-container .branchstatus-container table, th, td{
+    padding: 1rem; 
+}
+.bussinessstatus-container .branchstatus-container table, th, td{
+    border-collapse: collapse;
+    padding: 1rem;
+}
+.bussinessstatus-container .branchstatus-container thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(224, 169, 159, 0.966);    
+    color: rgba(12, 12, 12, 0.808);
+    padding-left: 20px
+}
+.bussinessstatus-container .branchstatus-container td{
+    padding-left: 20px;
+}
+.branchstatus-containertbody tr:nth-child(even){
+    background-color: #d12e12c7;
+}
+.generalinfoP-container p{
+    background-color: rgba(159, 182, 224, 0.966);
+    width: 200px;
+    height: 20px;
+    display: flex;
+    border-radius: 2px;
+    justify-content: center;
+    align-items: center;
+}
+/*
+bussiness status delivery status table style/css
+**/
+.bussinessstatus-container .deliverystatus-container{
+    width: 500px;
+    height: 200px;
+    margin-top: 5px;
+    margin-left: 102px;
+}
+.bussinessstatus-container .deliverystatus-container{
+    background-color: #8295b84b;
+    width: 523px;
+    height: 200px;
+    overflow: auto; 
+}
+.bussinessstatus-container .deliverystatus-container::-webkit-scrollbar{
+    width:0.6rem;
+    height:0.4rem;
+}
+.bussinessstatus-container .deliverystatus-container::-webkit-scrollbar-thumb{
+   background-color:rgba(34, 26, 26, 0.199);;
+}
+.bussinessstatus-container .deliverystatus-container table, th, td{
+    padding: 1rem; 
+}
+.bussinessstatus-container .deliverystatus-container table, th, td{
+    border-collapse: collapse;
+    padding: 1rem;
+}
+.bussinessstatus-container .deliverystatus-container thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(224, 169, 159, 0.966);    
+    color: rgba(12, 12, 12, 0.808);
+    padding-left: 20px
+}
+.bussinessstatus-container .deliverystatus-container td{
+    padding-left: 20px;
+}
+.deliverystatus-container tbody tr:nth-child(even){
+    background-color: #d12e12c7;
+}
+.generalinfoP-container p{
+    background-color: rgba(159, 182, 224, 0.966);
+    width: 200px;
+    height: 20px;
+    display: flex;
+    border-radius: 2px;
+    justify-content: center;
+    align-items: center;
+}
+/*
+bussiness status bakery status table style/css
+**/
+.bussinessstatus-container .bakerystatus-container{
+    width: 500px;
+    height: 200px;
+    margin-top: 5px;
+    margin-left: 102px;
+}
+.bussinessstatus-container .bakerystatus-container{
+    background-color: #8295b84b;
+    width: 523px;
+    height: 200px;
+    overflow: auto; 
+}
+.bussinessstatus-container .bakerystatus-container::-webkit-scrollbar{
+    width:0.6rem;
+    height:0.4rem;
+}
+.bussinessstatus-container .bakerystatus-container::-webkit-scrollbar-thumb{
+   background-color:rgba(34, 26, 26, 0.199);;
+}
+.bussinessstatus-container .bakerystatus-container table, th, td{
+    padding: 1rem; 
+}
+.bussinessstatus-container .bakerystatus-container table, th, td{
+    border-collapse: collapse;
+    padding: 1rem;
+}
+.bussinessstatus-container .bakerystatus-container thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(224, 169, 159, 0.966);    
+    color: rgba(12, 12, 12, 0.808);
+    padding-left: 20px
+}
+.bussinessstatus-container .bakerystatus-container td{
+    padding-left: 20px;
+}
+.bakerystatus-container tbody tr:nth-child(even){
+    background-color: #d12e12c7;
+}
+.generalinfoP-container p{
+    background-color: rgba(159, 182, 224, 0.966);
+    width: 200px;
+    height: 20px;
+    display: flex;
+    border-radius: 2px;
+    justify-content: center;
+    align-items: center;
+}
+.dashbord-container .mainbarbutton-container{
+    margin-top: 0px;
+}
+
+.dashbord-container .mainbarbutton-container button{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(79, 104, 107);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.mainbarbutton-container button:hover{
+    background-color:rgb(24, 124, 124);
+    transition: 60ms;
+}
+.mainbarbutton-container button:active{
+    background-color: rgb(24, 67, 124);
+}
+.dashbord-container .mainbarbutton-container .account-btn{
+    margin-left: 5px;
+}

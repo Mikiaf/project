@@ -35,6 +35,16 @@
 .deliverysidebar-container{
     margin-left: 53px;
 }
+.maindeliverinfo-container .searche-container input{
+    width: 690px;
+    height: 30px;
+    border: none;
+    background-color: rgb(170, 207, 207);
+    border-radius: 2px;
+    margin-top: 5px;
+    padding-left: 10px;
+    outline: none;
+}
 .maindeliverinfo-container .generalinfotable-container{
     background-color: #8295b84b;
     margin-top: 5px;
@@ -58,6 +68,7 @@
 }
 .maindeliverinfo-container .generalinfotable-container td{
     padding-left: 28px; 
+    font-size: 88%;
 }
 .maindeliverinfo-container .generalinfotable-container::-webkit-scrollbar{
     width:0.5rem;
@@ -96,6 +107,7 @@
 }
 .maindeliverinfo-container .todayinfotable-container td{
     padding-left: 12.6px;
+    font-size: 88%;
 }
 .maindeliverinfo-container .todayinfotable-container::-webkit-scrollbar{
     width:0.5rem;
@@ -112,17 +124,27 @@
     background-color: #8295b8a9;
 } 
 /* add deliver button css/style code */
+/*done info css/style code*/
 
-.adddeliver-container .doneinfo-container{
-    background-color: rgba(152, 214, 193, 0.767);
-    width: 702px;
-    height: 170px;
-}
+/*from info css/style code*/
 .adddeliver-container .forminfo-container{
     margin-top: 10px;
     background-color: rgba(155, 179, 224, 0.555);
     padding: 15px;
     color: rgb(46, 45, 45);
+}
+.adddeliver-container .forminfo-container .imageinfo-container{
+    margin-left: 400px;
+}
+.adddeliver-container .forminfo-container .imageinfo-container .image-container{
+    height: 200px;
+}
+.adddeliver-container .forminfo-container .imageinfo-container .image-container img{
+    width: 200px;
+    height: 200px;
+}
+.adddeliver-container .forminfo-container .forminput-container{
+    margin-top: -240px;
 }
 .adddeliver-container .forminput-container input{
     width: 300px;
@@ -145,7 +167,9 @@
     color: white;
     cursor: pointer;
 }
-
+.adddeliver-container .forminfo-container .forminput-container button:hover{
+    background-color: rgb(170, 130, 207);
+}
 /* fulldeliverinfo button css/style code */
 .fulldeliverinfo-container .sbranches-container .searche-container input{
     width: 690px;
@@ -200,29 +224,78 @@
   }
   .fulldeliverinfo-container .sbranches-container td{
       padding-left: 14.9px;
-      font-size: 91%;
+      font-size: 88%;
   }
   .sbranches-container tbody tr:nth-child(even){
       background-color: #8295b8a9;
   }
   /* maininfo style/css code*/
   .fulldeliverinfo-container .maininfo-container{
-      width: 702px;
-      height: 300px;
-      background-color: rgb(208, 241, 235);
+    width: 702px;
+    height: 320px;
+    background-color: rgba(88, 214, 204, 0.582);
   }
-  /* status style/css code*/
-  .fulldeliverinfo-container .status-container{
-      width: 702px;
-      height: 300px;
-      background-color: white;
-  }
-  .managedelivery-button{
+.deliveryinfo-conatiner{
+    padding: 20px;
+    margin: 20px;
+    height: 170px;
+}
+.deliveryinfo-conatiner h1{
+    display: flex;
+    background-color: aquamarine;
+    width: 160px;
+    height: 17px;
+    font-size: 12px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+.deliveryinfo-conatiner .deliverycharinfo-conatiner input{
+    width: 200px;
+    height: 25px;
+    border: none;
+    background-color: rgba(229, 231, 231, 0.87);
+    border-radius: 2px;
+    padding-left: 10px;
+    margin-top: 15px;
+    outline: none;
+}
+.deliveryinfo-conatiner .deliveryimage-container{
+    margin-left: 445px;
+    margin-top: -210px;
+    width: 200px;
+    height: 190px;
+}
+.deliveryimage-container p strong{
+    margin-left: 25px;
+    font-size: 10px;
+}
+.deliveryinfo-conatiner .deliveryimage-container img{
+    width: 150px;
+    height: 150px;
+    margin-left: 25px;
+}
+.managedelivery-buttoncontainer {
+    margin-top: 65px;
+    margin-left: 460px
+}
+
+.deletedelivery-btn{
+    margin-left: 10px;
     background-color:rgba(152, 114, 293, 0.767);
     outline: none;
     border:none;
-    margin-left:580px;
-    margin-top:230px;
+    width:110px;
+    height:30px;
+    border-radius: 2px;
+    cursor: pointer;
+
+}
+.updatedelivery-btn{
+    background-color:rgba(152, 114, 293, 0.767);
+    outline: none;
+    border:none;
     width:110px;
     height:30px;
     border-radius: 2px;
@@ -235,36 +308,6 @@
 .managedelivery-buttoncontainer button:active{
     background-color: rgb(24, 67, 124);
 }
-.updatedelivery-container{
-    display: flex;
-}
-.updatedeliveryinput-container input{
-    width: 220px;
-    height: 30px;
-    border: none;
-    background-color: rgba(229, 231, 231, 0.87);
-    border-radius: 2px;
-    padding-left: 15px;
-    margin-top: 15px;
-    margin-left: -1px;
-    outline: none;
-}
-.updatedeliveryinput-container p{
-    background-color:rgba(206, 178, 216, 0.966);
-    width: 300px;
-    height: 20px;
-    text-align: center;
-    padding-top: 5px;
-}
-.updatedeliveryImg-container{
-    position: relative;
-    overflow: hidden;
-    width: 250px;
-    height: 250px;
-    margin-left: 250px;
-    margin-top: 11px;
-    margin-right: -20px;
-}
 .slide{
     position: absolute;
     width: 100%;
@@ -273,8 +316,43 @@
     height: 100%;
     transition: opacity 0.5s ease-in-out;
 }
+  /* status style/css code*/
+.fulldeliverinfo-container .status-container{
+    width: 702px;
+    height: 510px;
+    background-color: rgb(181, 240, 255);
+}
+.status-container .btn-container{
+    margin-left: 350px;
+}
+.btn-container button{
+    margin-left: 10px; 
+    margin-top: 15px;
+    width: 100px;
+    height: 25px;
+    outline: none;
+    border: none;
+    background-color: rgba(122, 144, 206, 0.726);
+}
+.status-container .btn-container button:hover{
+    background-color:rgb(24, 124, 124);
+    transition: 60ms;
+}
+.status-container .btn-container button:active{
+    background-color: rgb(24, 67, 124);
+}
 /* delivered product css/style code*/
 /* delivered product table css/style code*/
+.deliveredproducts-container .searche-container input{
+    width: 690px;
+    height: 30px;
+    border: none;
+    background-color: rgb(170, 207, 207);
+    border-radius: 2px;
+    margin-top: 5px;
+    padding-left: 10px;
+    outline: none;
+}
 .deliveredproducts-container .productstable-container{
     background-color: #8295b84b;
       margin-top: 5px;
@@ -316,7 +394,7 @@
   }
   .deliveredproducts-container .productstable-container td{
       padding-left: 14.9px;
-      font-size: 91%;
+      font-size: 88%;
   }
   .productstable-container tbody tr:nth-child(even){
       background-color: #8295b8a9;
@@ -324,6 +402,6 @@
   /* delivered product graph css/style code*/
   .deliveredproducts-container .productsgraph-container{
     width: 702px;
-    height: 300px;
-    background-color: rgb(148, 170, 166);
+    height: 470px;
+    background-color: rgb(181, 240, 255);
 }

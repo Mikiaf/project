@@ -13,13 +13,16 @@ function BusinessMainbar(props){
                 <button onClick={props.funcsell}>Sale Status</button><br></br>
                 <button onClick={props.funcsalary}>salary status</button>
                 <button onClick={props.funcprolose}>profit and lose</button>
+                <button onClick={props.funcorder}>order</button>
+                <button onClick={props.funccost}>cost</button>
+                <button onClick={props.funcconnection}>connection</button>
             </div>
         </>
     )
 }
 function BusinessSidebar(props){
     function Transaction(props){
-        function TransactionGraph(props){
+        function TransactionGraph(){
             return (
                 <>
                     <div className="generalinfoP-container">
@@ -31,7 +34,7 @@ function BusinessSidebar(props){
                 </>
             )
         }
-        function TransactionInfoTable(props){
+        function TransactionInfoTable(){
             return (
                 <>
                     <div className="generalinfoP-container">
@@ -350,6 +353,177 @@ function BusinessSidebar(props){
             </>
         ):""
     }
+    function Order(props){
+        function OrderGraph(){
+            return (
+                <>
+                    <div className="generalinfoP-container">
+                        <p style={{backgroundColor:"rgba(152, 214, 193, 0.767)",width:'240px'}}>all information about transaction in graph</p>
+                    </div>
+                    <div className="ordergraph-container">
+                        <p>test</p>
+                    </div>
+                </>
+            )
+        }
+        function OrderInfoTable(){
+            return (
+                <>
+                    <div className="generalinfoP-container">
+                        <p style={{backgroundColor:"rgba(152, 214, 193, 0.767)"}}>all information transactionn in table</p>
+                    </div>
+                    <div className="orderinfoTable-container">
+                        <table>
+                                <thead>
+                                    <tr>
+                                        <th>TransID</th>
+                                        <th>TransTime</th>
+                                        <th>TransType</th>
+                                        <th>Transproduct</th>
+                                        <th>TransFrom</th>
+                                        <th>Transdeliver</th>
+                                        <th>TransTo</th>
+                                        <th>TransQuantity</th>
+                                        <th>TransGoal</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>22</td>
+                                        <td>22</td>
+                                        <td>22</td>
+                                        <td>22</td>
+                                        <td>22</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+                </>
+            )
+        }
+        return props.active ?(
+            <>
+                <div className="order-conatainer">
+                    <OrderGraph/>
+                    <OrderInfoTable/>
+                </div>
+            </>
+        ) :""
+    }
+    function Cost(props){
+        function CostGraph(){
+            return (
+                <>
+                    <div className="generalinfoP-container">
+                        <p style={{backgroundColor:"rgba(152, 214, 193, 0.767)",width:'240px'}}>all information about transaction in graph</p>
+                    </div>
+                    <div className="costgraph-container">
+                        <p>test</p>
+                    </div>
+                </>
+            )
+        }
+        function CostInfoTable(){
+            return (
+                <>
+                    <div className="generalinfoP-container">
+                        <p style={{backgroundColor:"rgba(152, 214, 193, 0.767)"}}>all information transactionn in table</p>
+                    </div>
+                    <div className="costinfoTable-container">
+                        <table>
+                                <thead>
+                                    <tr>
+                                        <th>TransID</th>
+                                        <th>TransTime</th>
+                                        <th>TransType</th>
+                                        <th>Transproduct</th>
+                                        <th>TransFrom</th>
+                                        <th>Transdeliver</th>
+                                        <th>TransTo</th>
+                                        <th>TransQuantity</th>
+                                        <th>TransGoal</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>22</td>
+                                        <td>22</td>
+                                        <td>22</td>
+                                        <td>22</td>
+                                        <td>22</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+                </>
+            )
+        }
+        return props.active ?(
+            <>
+                <div className="cost-conatainer">
+                    <CostGraph/>
+                    <CostInfoTable/>
+                </div>
+            </>
+        ) :""
+    }
+    function Connection(props){
+        function ConnectionGraph(){
+            return (
+                <>
+                    <div className="generalinfoP-container">
+                        <p style={{backgroundColor:"rgba(152, 214, 193, 0.767)",width:'240px'}}>all information about transaction in graph</p>
+                    </div>
+                    <div className="connectiongraph-container">
+                        <p>test</p>
+                    </div>
+                </>
+            )
+        }
+        function ConnectionInfoTable(){
+            return (
+                <>
+                    <div className="generalinfoP-container">
+                        <p style={{backgroundColor:"rgba(152, 214, 193, 0.767)"}}>all information transactionn in table</p>
+                    </div>
+                    <div className="connectioninfoTable-container">
+                        <table>
+                                <thead>
+                                    <tr>
+                                        <th>TransID</th>
+                                        <th>TransTime</th>
+                                        <th>TransType</th>
+                                        <th>Transproduct</th>
+                                        <th>TransFrom</th>
+                                        <th>Transdeliver</th>
+                                        <th>TransTo</th>
+                                        <th>TransQuantity</th>
+                                        <th>TransGoal</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>22</td>
+                                        <td>22</td>
+                                        <td>22</td>
+                                        <td>22</td>
+                                        <td>22</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+                </>
+            )
+        }
+        return props.active ?(
+            <>
+                <div className="connection-conatainer">
+                    <ConnectionGraph/>
+                    <ConnectionInfoTable/>
+                </div>
+            </>
+        ) :""
+    }
     return(
         <>
             <div className="businesssidebar-container">
@@ -365,6 +539,15 @@ function BusinessSidebar(props){
                 <ProfitAndLose
                     active={props.activeprolose}
                 />
+                <Order
+                    active={props.activeorder}
+                />
+                <Cost
+                    active={props.activecost}
+                />
+                <Connection
+                    active={props.activeconnection}
+                />
             </div>
         </>
     )
@@ -373,10 +556,13 @@ function BusinessSidebar(props){
 
 
 function Business(props){
-        const [trans , settrans] = useState(true)
-        const [sell , setsell] = useState(false)
-        const [salary , setsalary] = useState(false)
-        const [pro_lose , setprolose] = useState(false)
+        const [trans, settrans] = useState(true)
+        const [sell, setsell] = useState(false)
+        const [salary, setsalary] = useState(false)
+        const [pro_lose, setprolose] = useState(false)
+        const [order, setorder] = useState(false)
+        const [cost, setcost] = useState(false)
+        const [connection, setconnection] = useState(false)
 
         function activetrans(){
             setsell(false)
@@ -403,6 +589,30 @@ function Business(props){
             setsalary(false) 
             return setprolose(true)
         }
+        function activeorder(){
+            setsell(false)
+            setsalary(false)
+            setprolose(false)
+            settrans(false)
+            return setorder(true)
+        }
+        function activecost(){
+            setsell(false)
+            setsalary(false)
+            setprolose(false)
+            settrans(false)
+            setorder(false)
+            return setcost(true)
+        }
+        function activeconnection(){
+            setsell(false)
+            setsalary(false)
+            setprolose(false)
+            settrans(false)
+            setorder(false)
+            setcost(true)
+            return setconnection(true)
+        }
     return props.active ?(
         <>
             <div className="business-container">
@@ -411,12 +621,18 @@ function Business(props){
                     funcsell = {activesell}
                     funcsalary = {activesalary}
                     funcprolose = {activeprolose}
+                    funcorder = {activeorder}
+                    funccost = {activecost}
+                    funcconnection = {activeconnection}
                 />
                 <BusinessSidebar
                     activetrans = {trans}
                     activesell = {sell}
                     activesalary = {salary}
                     activeprolose = {pro_lose}
+                    activeorder = {order}
+                    activecost = {cost}
+                    activeconnection = {connection}
                 />
             </div>
         </>

@@ -1,0 +1,96 @@
+.modal{
+    position:fixed;
+    top :50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background-color:rgba(207, 235, 223, 0.808);
+    width:200px;
+    height:60px;
+    padding:50px;
+    z-index:1000;
+}
+.modal-container {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(87, 83, 83, 0.7);
+}
+
+.modal .close-btn {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(133, 130, 130);
+    top: 10px;
+    border-radius: 2px;
+    border: none;
+    right: 10px;
+    cursor: pointer;
+}
+.modal .submit-btn {
+    width: 60px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    height: 25px;
+    color: rgb(78, 77, 77);
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(103, 153, 153);
+}
+
+.modal p{
+    position: absolute;
+    top: 10px;
+    right: 190px; 
+}
+.modal .column-container{
+    position: absolute;
+    top: 40px;
+    right: 88px;
+    height: 28px;
+    border: none;
+    outline: none;
+    width: 203px;
+    font-size: 12px;
+    background-color: rgb(157, 227, 240);
+    
+}
+.modal .wokingpostion-conatiner{
+    top: 20px;
+    padding-left: 10px;
+    margin-top: 7px;
+    border: none;
+    outline: none;
+    height: 25px;
+    width: 203px;
+    font-size: 12px;
+    background-color: rgb(223, 157, 240);
+    
+}
+
+.modal .input-container{
+    position: absolute;
+    top: 65px;
+    right: 88px;
+    margin-top: 5px;
+}
+
+.modal .input-container input{
+    outline: none;
+    border: none;
+    width: 190px;
+    height: 25px;
+    padding-left: 10px;
+    margin-top: 7px;
+}
+.modal .close-btn:hover{
+    background-color: rgb(209, 48, 48);
+    transition: 60ms;
+}
+.modal .submit-btn:active{
+    background-color: rgb(72, 98, 110);
+    transition: 60ms;
+}

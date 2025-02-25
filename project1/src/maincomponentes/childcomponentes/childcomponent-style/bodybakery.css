@@ -34,6 +34,19 @@
     margin-left: 53px;
 }
 /* bekery sidebarmain button style/css code*/
+.mainbekeryinfo-container .searche-container input{
+    width: 690px;
+    height: 30px;
+    border: none;
+    background-color: rgb(170, 207, 207);
+    border-radius: 2px;
+    margin-top: 5px;
+    padding-left: 10px;
+    outline: none;
+}
+.mainbekeryinfo-container .generalinfoP-container p{
+    width: 250px;
+}
 .mainbekeryinfo-container .generalinfotable-container{
     background-color: #8295b84b;
     margin-top: 5px;
@@ -55,6 +68,7 @@
 }
 .mainbekeryinfo-container  .generalinfotable-container td{
     padding-left: 17.8px;
+    font-size: 88%;
 }
 .generalinfotable-container tbody tr:nth-child(even){
     background-color: #8295b8a9;
@@ -83,6 +97,7 @@
 }
 .mainbekeryinfo-container  .todayinfotable-container td{
     padding-left: 21.5px;
+    font-size: 88%;
 }
 .mainbekeryinfo-container  .todayinfotable-container::-webkit-scrollbar{
     width:0.6rem;
@@ -99,11 +114,7 @@
     background-color: #8295b8a9;
 }
 /* addbekery style/css code*/
-.addbekery-container .submitedinfo-container{
-    background-color: rgba(152, 214, 193, 0.767);
-    width: 702px;
-    height: 170px;
-}
+/*done info container style.css*/
 /* forminfo style/css code*/
 .addbekery-container .forminfo-container{
     margin-top: 10px;
@@ -111,7 +122,20 @@
     padding: 15px;
     color: rgb(46, 45, 45);
 }
-.addbekery-container .forminfo-container input{
+.addbekery-container .forminfo-container .imageinfo-container{
+    margin-left: 400px;
+}
+.addbekery-container .forminfo-container .imageinfo-container .image-container{
+    height: 200px;
+}
+.addbekery-container .forminfo-container .imageinfo-container .image-container img{
+    width: 200px;
+    height: 200px;
+}
+.addbekery-container .forminfo-container .forminput-container{
+    margin-top: -240px;
+}
+.addbekery-container .forminfo-container .forminput-container input{
     width: 300px;
     height: 30px;
     border: none;
@@ -122,7 +146,7 @@
     margin-top: 15px;
     outline: none;
 }
-.addbekery-container .forminfo-container button{
+.addbekery-container .forminfo-container .forminput-container button{
     margin-top: 10px;
     width: 100px;
     height: 30px;
@@ -132,10 +156,10 @@
     color: white;
     cursor: pointer;
 }
-.addbekery-container .forminfo-container button:hover{
+.addbekery-container .forminfo-container .forminput-container button:hover{
     background-color: rgb(170, 130, 207);
 }
-.addbekery-container  .formimage-container{
+.addbekery-container  .formimage-container .forminput-container{
     display: flex;
     width: 200px;
     height: 215px;
@@ -201,68 +225,88 @@
 }
 .fullbekeryinfo-container .sbranches-container td{
     padding-left: 20.9px;
-    font-size: 91%;
+    font-size: 88%;
 }
 .sbranches-container tbody tr:nth-child(even){
     background-color: #8295b8a9;
 }
-/* maininfo style/css code*/
+/* fullbakeryinfo style/css code*/
 .fullbekeryinfo-container .maininfo-container{
     width: 702px;
-    height: 300px;
-    background-color: rgb(208, 241, 235);
+    height: 320px;
+    background-color: rgba(88, 214, 204, 0.582);
 }
-/* status style/css code*/
-.fullbekeryinfo-container .status-container{
-    width: 702px;
-    height: 300px;
-    background-color: white;
+.bakeryinfo-conatiner{
+    padding: 20px;
+    margin: 20px;
+    height: 170px;
 }
-.managebekery-button{
+.bakeryinfo-conatiner h1{
+    display: flex;
+    background-color: aquamarine;
+    width: 160px;
+    height: 17px;
+    font-size: 12px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+.bakeryinfo-conatiner .bakerycharinfo-conatiner input{
+    width: 200px;
+    height: 25px;
+    border: none;
+    background-color: rgba(229, 231, 231, 0.87);
+    border-radius: 2px;
+    padding-left: 10px;
+    margin-top: 15px;
+    outline: none;
+}
+.bakeryinfo-conatiner .bakeryimage-container{
+    margin-left: 445px;
+    margin-top: -210px;
+    width: 200px;
+    height: 190px;
+}
+.bakeryimage-container p strong{
+    margin-left: 25px;
+    font-size: 10px;
+}
+.bakeryinfo-conatiner .bakeryimage-container img{
+    width: 150px;
+    height: 150px;
+    margin-left: 25px;
+}
+.managebakery-buttoncontainer {
+    margin-top: 65px;
+    margin-left: 460px;
+}
+.deletebakery-btn{
+    margin-left: 10px;
     background-color:rgba(152, 114, 293, 0.767);
     outline: none;
     border:none;
-    margin-left:580px;
-    margin-top:230px;
+    width:110px;
+    height:30px;
+    border-radius: 2px;
+    cursor: pointer;
+
+}
+.updatebakery-btn{
+    background-color:rgba(152, 114, 293, 0.767);
+    outline: none;
+    border:none;
     width:110px;
     height:30px;
     border-radius: 2px;
     cursor: pointer;
 }
-.managebekery-buttoncontainer button:hover{
+.managebakery-buttoncontainer button:hover{
     background-color:rgb(24, 124, 124);
     transition: 60ms;
 }
-.managebekery-buttoncontainer button:active{
+.managebakery-buttoncontainer button:active{
     background-color: rgb(24, 67, 124);
-}
-.updatebekery-container{
-    display: flex;
-}
-.updatebekeryinput-container input{
-    width: 220px;
-    height: 30px;
-    border: none;
-    background-color: rgba(229, 231, 231, 0.87);
-    border-radius: 2px;
-    padding-left: 15px;
-    margin-top: 15px;
-    margin-left: -1px;
-    outline: none;
-}
-.updatebekeryinput-container p{
-    background-color:rgba(206, 178, 216, 0.966);
-    width: 300px;
-    height: 20px;
-    text-align: center;
-    padding-top: 5px;
-}
-.updatebekeryImg-container{
-    width: 250px;
-    height: 250px;
-    margin-left: 250px;
-    margin-top: 11px;
-    margin-right: -20px;
 }
 .slide{
     position: absolute;
@@ -272,8 +316,24 @@
     height: 100%;
     transition: opacity 0.5s ease-in-out;
 }
+/* status style/css code*/
+.fullbekeryinfo-container .status-container{
+    width: 702px;
+    height: 510px;
+    background-color: rgb(181, 240, 255);
+}
 /* bakery products  css/style code*/
 /*bakery products table css/style code*/
+.bakedproducts-container .searche-container input{
+    width: 690px;
+    height: 30px;
+    border: none;
+    background-color: rgb(170, 207, 207);
+    border-radius: 2px;
+    margin-top: 5px;
+    padding-left: 10px;
+    outline: none;
+}
 .bakedproducts-container .productstable-container{
     background-color: #8295b84b;
       margin-top: 5px;
@@ -315,7 +375,7 @@
   }
   .bakedproducts-container .productstable-container td{
       padding-left: 17.9px;
-      font-size: 91%;
+      font-size: 88%;
   }
   .productstable-container tbody tr:nth-child(even){
       background-color: #8295b8a9;
@@ -323,6 +383,6 @@
   /*bakery products graph css/style code*/
   .bakedproducts-container .productsgraph-container{
     width: 702px;
-    height: 300px;
-    background-color: rgb(148, 170, 166);
+    height: 470px;
+    background-color: rgb(181, 240, 255);
   }

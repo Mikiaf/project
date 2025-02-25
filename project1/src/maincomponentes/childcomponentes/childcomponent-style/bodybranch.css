@@ -95,7 +95,7 @@
 }
 .fullbranchinfo-container .sbranches-container td{
     padding-left: 14px;
-    font-size: 91%;
+    font-size: 88%;
 }
 .sbranches-container tbody tr:nth-child(even){
     background-color: #8295b8a9;
@@ -103,21 +103,70 @@
 /* maininfo style/css code*/
 .fullbranchinfo-container .maininfo-container{
     width: 702px;
-    height: 300px;
-    background-color: rgb(208, 241, 235);
+    height: 320px;
+    background-color: rgba(88, 214, 204, 0.582);
 }
-/* status style/css code*/
-.fullbranchinfo-container .status-container{
-    width: 702px;
-    height: 300px;
-    background-color: white;
+.branchinfo-conatiner{
+    padding: 20px;
+    margin: 20px;
+    height: 170px;
 }
-.managebranch-button{
+.branchinfo-conatiner h1{
+    display: flex;
+    background-color: aquamarine;
+    width: 160px;
+    height: 17px;
+    font-size: 12px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+.branchinfo-conatiner .branchcharinfo-conatiner input{
+    width: 200px;
+    height: 25px;
+    border: none;
+    background-color: rgba(229, 231, 231, 0.87);
+    border-radius: 2px;
+    padding-left: 10px;
+    margin-top: 15px;
+    outline: none;
+}
+.branchinfo-conatiner .branchimage-container{
+    margin-left: 445px;
+    margin-top: -210px;
+    width: 200px;
+    height: 190px;
+}
+.branchimage-container p strong{
+    margin-left: 25px;
+    font-size: 10px;
+}
+.branchinfo-conatiner .branchimage-container img{
+    width: 150px;
+    height: 150px;
+    margin-left: 25px;
+}
+
+.managebranch-buttoncontainer {
+    margin-top: 65px;
+    margin-left: 460px
+}
+.deletebranch-btn{
+    margin-left: 10px;
     background-color:rgba(152, 114, 293, 0.767);
     outline: none;
     border:none;
-    margin-left:580px;
-    margin-top:230px;
+    width:110px;
+    height:30px;
+    border-radius: 2px;
+    cursor: pointer;
+
+}
+.updatebranch-btn{
+    background-color:rgba(152, 114, 293, 0.767);
+    outline: none;
+    border:none;
     width:110px;
     height:30px;
     border-radius: 2px;
@@ -130,36 +179,7 @@
 .managebranch-buttoncontainer button:active{
     background-color: rgb(24, 67, 124);
 }
-.updatebranch-container{
-    display: flex;
-}
-.updatebranchinput-container input{
-    width: 220px;
-    height: 30px;
-    border: none;
-    background-color: rgba(229, 231, 231, 0.87);
-    border-radius: 2px;
-    padding-left: 15px;
-    margin-top: 15px;
-    margin-left: -1px;
-    outline: none;
-}
-.updatebranchinput-container p{
-    background-color:rgba(206, 178, 216, 0.966);
-    width: 300px;
-    height: 20px;
-    text-align: center;
-    padding-top: 5px;
-}
-.updatebranchImg-container{
-    position: relative;
-    overflow: hidden;
-    width: 250px;
-    height: 250px;
-    margin-left: 250px;
-    margin-top: 11px;
-    margin-right: -20px;
-}
+
 .slide{
     position: absolute;
     width: 100%;
@@ -168,11 +188,46 @@
     height: 100%;
     transition: opacity 0.5s ease-in-out;
 }
-
+/* status style/css code*/
+.fullbranchinfo-container .status-container{
+    width: 702px;
+    height: 480px;
+    background-color: rgb(181, 240, 255);
+}
+.status-container .btn-container{
+    margin-left: 350px;
+}
+.btn-container button{
+    margin-left: 10px; 
+    margin-top: 15px;
+    width: 100px;
+    height: 25px;
+    outline: none;
+    border: none;
+    background-color: rgba(122, 144, 206, 0.726);
+}
+.status-container .btn-container button:hover{
+    background-color:rgb(24, 124, 124);
+    transition: 60ms;
+}
+.status-container .btn-container button:active{
+    background-color: rgb(24, 67, 124);
+}
 /*##################################
     main button style/css code
 */
+
 /* generalinfoTable style/css code*/
+.mainbranchinfo-container .searche-container input{
+    width: 690px;
+    height: 30px;
+    border: none;
+    background-color: rgb(170, 207, 207);
+    border-radius: 2px;
+    margin-top: 5px;
+    padding-left: 10px;
+    outline: none;
+}
 .mainbranchinfo-container .generalinfoTable-container{
     background-color: #8295b84b;
     margin-top: 5px;
@@ -204,9 +259,18 @@
 }
 .mainbranchinfo-container .generalinfoTable-container td{
     padding-left: 12px;
+    font-size: 88%;
 }
 .generalinfoTable-container tbody tr:nth-child(even){
     background-color: #8295b8a9;
+}
+.mainbranchinfo-container .generalinfoTable-container tr:hover{
+    background-color: rgb(144, 143, 148);
+    transition: 60ms;
+}
+.mainbranchinfo-container .generalinfoTable-container  tr:active{
+    background-color: rgb(150, 139, 192);
+    transition: 60ms;
 }
 .generalinfoP-container p{
     background-color: rgba(159, 182, 224, 0.966);
@@ -250,9 +314,18 @@
 }
 .mainbranchinfo-container .todayinfoTable-container td{
     padding-left: 12.5px;
+    font-size: 88%;
 }
 .todayinfoTable-container tbody tr:nth-child(even){
     background-color: #8295b8a9;
+}
+.mainbranchinfo-container .todayinfoTable-container tr:hover{
+    background-color: rgb(144, 143, 148);
+    transition: 60ms;
+}
+.mainbranchinfo-container .todayinfoTable-container  tr:active{
+    background-color: rgb(150, 139, 192);
+    transition: 60ms;
 }
 .todayinfoP-container p{
     background-color: rgba(211, 159, 224, 0.966);
@@ -267,11 +340,6 @@
     addbranch button style/css code
 */
 /* doneinfos style/css code*/
-.addbranch-container .submitedinfo-container{
-    background-color: rgba(152, 214, 193, 0.767);
-    width: 702px;
-    height: 170px;
-}
 /* forminfo style/css code*/
 .addbranch-container .forminfo-container{
     margin-top: 10px;
@@ -279,7 +347,20 @@
     padding: 15px;
     color: rgb(46, 45, 45);
 }
-.addbranch-container .forminfo-container input{
+.addbranch-container .forminfo-container .imageinfo-container{
+    margin-left: 400px;
+}
+.addbranch-container .forminfo-container .imageinfo-container .image-container{
+    height: 200px;
+}
+.addbranch-container .forminfo-container .imageinfo-container .image-container img{
+    width: 200px;
+    height: 200px;
+}
+.addbranch-container .forminfo-container .forminput-container{
+    margin-top: -240px;
+}
+.addbranch-container .forminfo-container .forminput-container input{
     width: 300px;
     height: 30px;
     border: none;
@@ -290,7 +371,7 @@
     margin-top: 15px;
     outline: none;
 }
-.addbranch-container .forminfo-container button{
+.addbranch-container .forminfo-container .forminput-container button{
     margin-top: 10px;
     width: 100px;
     height: 30px;
@@ -300,21 +381,22 @@
     color: white;
     cursor: pointer;
 }
-.addbranch-container .forminfo-container button:hover{
+.addbranch-container .forminfo-container .forminput-container button:hover{
     background-color: rgb(170, 130, 207);
 }
-.addbranch-container  .formimage-container{
-    display: flex;
-    width: 200px;
-    height: 215px;
-    margin-left: 130px;
-    margin-top: 15px;
-    align-items: center;
-    justify-content: center;
-    border: solid rgb(90, 113, 214) 1px;
-}
+
 /*accepted products css/style code */
 /* accepted products status in tables css/style code*/
+.acceptedproducts-container .searche-container input{
+    width: 690px;
+    height: 30px;
+    border: none;
+    background-color: rgb(170, 207, 207);
+    border-radius: 2px;
+    margin-top: 5px;
+    padding-left: 10px;
+    outline: none;
+}
 .acceptedproducts-container .productstable-container{
     background-color: #8295b84b;
     margin-top: 10px;
@@ -346,13 +428,22 @@
 }
 .acceptedproducts-container .productstable-container td{
     padding-left: 12.5px;
+    font-size: 88%;
 }
 .productstable-container tbody tr:nth-child(even){
     background-color: #8295b8a9;
 }
+.acceptedproducts-container .productstable-container tr:hover{
+    background-color: rgb(144, 143, 148);
+    transition: 60ms;
+}
+.acceptedproducts-container .productstable-container  tr:active{
+    background-color: rgb(150, 139, 192);
+    transition: 60ms;
+}
 /* accepted products status in graph css/style code*/
 .acceptedproducts-container  .productsgraph-container{
-    background-color: rgba(152, 214, 193, 0.767);
     width: 702px;
-    height: 210px;
+    height: 280px;
+    background-color: rgb(181, 240, 255);
 }

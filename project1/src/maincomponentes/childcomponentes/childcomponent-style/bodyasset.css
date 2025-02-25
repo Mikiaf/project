@@ -230,7 +230,20 @@
     padding: 15px;
     color: rgb(46, 45, 45);
 }
-.addasset-container .forminfo-container input{
+.addasset-container .forminfo-container .imageinfo-container{
+    margin-left: 400px;
+}
+.addasset-container .forminfo-container .imageinfo-container .image-container{
+    height: 200px;
+}
+.addasset-container .forminfo-container .imageinfo-container .image-container img{
+    width: 200px;
+    height: 200px;
+}
+.addasset-container .forminfo-container .forminput-container{
+    margin-top: -240px;
+}
+.addasset-container .forminfo-container .forminput-container input{
     width: 300px;
     height: 30px;
     border: none;
@@ -241,7 +254,17 @@
     margin-top: 15px;
     outline: none;
 }
-.addasset-container .forminfo-container button{
+.addasset-container .forminfo-container .forminput-container select{
+    width: 312px;
+    margin-top: 15px;
+    height: 32px;
+    padding-left: 6px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(157, 227, 240);
+}
+.addasset-container .forminfo-container .forminput-container button{
     margin-top: 10px;
     width: 100px;
     height: 30px;
@@ -251,10 +274,11 @@
     color: white;
     cursor: pointer;
 }
-.addasset-container .forminfo-container button:hover{
+
+.addasset-container .forminfo-container .forminput-container button:hover{
     background-color: rgb(170, 130, 207);
 }
-.addasset-container  .formimage-container{
+.addasset-container  .formimage-container .forminput-container{
     display: flex;
     width: 200px;
     height: 215px;

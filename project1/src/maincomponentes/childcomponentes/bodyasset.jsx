@@ -1,7 +1,9 @@
 import React from "react";
 import { useState } from "react";
-import Modal from "./grandchildcomponetes/modal1";
 import "./childcomponent-style/bodyasset.css"
+import InsertData from "./grandchildcomponetes/insertdatapopup";
+import Updatedata from "./grandchildcomponetes/updatedatapopup";
+import Deletedata from "./grandchildcomponetes/deletedatapopup";
 
 function AssetMainbar(props){
     return(
@@ -150,22 +152,134 @@ function AssetSidebar(props){
             )
         }
         function Forminfo(props){
+            const [ownerdename, setownerdename] = useState('');
+            const [ownerid, setownerid] = useState(null);
+            const [assetname, setassetname] = useState('');
+            const [numberofasset, setnumberofasset] = useState(null);
+            const [assettype, setassettype] = useState('');
+            const [assetvalue, setassetvalue] = useState(null);
+            const [location, setlocation] = useState('');
+            const [assetstatus, setassetstatus] = useState('');
+            const [activeinsertdata, setactiveinsertdata] = useState(false);
+            const [selectedImage, setSelectedImage] = useState(null);
+            const handleclose = async (e) => {
+              setactiveinsertdata(!activeinsertdata);                           
+            }
+          
+            const handleSubmit = async (e) => {
+              e.preventDefault();
+              setactiveinsertdata(true);
+            };
+          
+            const handleImageChange = (event) => {
+              const file = event.target.files[0];
+              if (file) {
+                setSelectedImage(file);
+                // Preview the image (optional)
+                const reader = new FileReader();
+                reader.onloadend = () => {
+                  const preview = document.getElementById('image-preview');
+                  preview.src = reader.result;
+                };
+                reader.readAsDataURL(file);
+              }
+            };
             return(
                 <>
                     <div className="generalinfoP-container">
                         <p>submit information about asset</p>
                     </div>
                     <div className="forminfo-container">
+                    <div className="imageinfo-container">
+                                <label>Enter employee's image</label><br/>
+                                <input 
+                                        type="file"
+                                        className="image-input" 
+                                        accept="image/*"
+                                        onChange={handleImageChange} 
+                                    /><br/>
+                                    <div className="image-container"> 
+                                    {selectedImage && (
+                                        <div>
+                                        <h2>Image Preview:</h2>
+                                        <img id="image-preview" alt="Image Preview" />
+                                        <p>Selected File: {selectedImage.name}</p>
+                                        </div>
+                                    )}
+                                    </div>
+                            </div>
                         <form className="forminput-container">
-                                <input type="text" placeholder="Enter branch name"/><br/>
-                                <input type="text" placeholder="Enter branch location"/><br/>
-                                <input type="text" placeholder="Enter branch controler"/><br/>
-                                <input type="number" placeholder="Enter delivery id"/><br/>
-                                <input type="text" placeholder="Enter Branch type"/><br/>
-                                <input type="text" placeholder="Enter Branch sell goal"/><br/>
-                                <button>submit</button>
+                                <label>
+                                        <select value={ownerdename} onChange={(e)=>setownerdename(e.target.value)}>
+                                            <option value="">Select owner department name</option>
+                                            <option value="branch">branch</option>
+                                            <option value="delivery">delivery</option>
+                                            <option value="bakery">bakery</option>
+                                        </select>
+                                </label><br/>
+                                <input 
+                                    type="number" 
+                                    placeholder="Enter owner id"
+                                    value={ownerid}
+                                    onChange={(e)=>setownerid(e.target.value)}
+                                    /><br/>
+                                <input 
+                                    type="text" 
+                                    placeholder="Enter asset name"
+                                    value={assetname}
+                                    onChange={(e)=>setassetname(e.target.value)}
+                                    /><br/>
+                                <input 
+                                    type="number" 
+                                    placeholder="Enter number of asset"
+                                    value={numberofasset}
+                                    onChange={(e)=>setnumberofasset(e.target.value)}
+                                    /><br/>
+                                <input 
+                                    type="text" 
+                                    placeholder="Enter asset type"
+                                    value={assettype}
+                                    onChange={(e)=>setassettype(e.target.value)}
+                                    /><br/>
+                                <input 
+                                    type="number" 
+                                    placeholder="Enter asset value"
+                                    value={assetvalue}
+                                    onChange={(e)=>setassetvalue(e.target.value)}
+                                    /><br/>
+                                <input 
+                                    type="text" 
+                                    placeholder="Enter asset location"
+                                    value={location}
+                                    onChange={(e)=>setlocation(e.target.value)}
+                                    /><br/>
+                                <input 
+                                    type="text" 
+                                    placeholder="Enter asset status"
+                                    value={assetstatus}
+                                    onChange={(e)=>setassetstatus(e.target.value)}
+                                    /><br/>
+                                <button type="submit"onClick={handleSubmit}>submit</button>
                         </form>
                     </div>
+                    {activeinsertdata && (
+                            <InsertData
+                              activeinsertdata={activeinsertdata}
+                              db='asset'
+                              data={{
+                                assetname,
+                                ownerdename,
+                                ownerid,
+                                numberofasset,
+                                assettype,
+                                assetvalue,
+                                location,
+                                assetstatus,
+                                selectedImage
+                              }}
+                              handleclose={handleclose}
+                            />
+                          )}
                 </>
             )
         }
@@ -248,9 +362,6 @@ function AssetSidebar(props){
                         <div className="manageasset-buttoncontainer">
                             <button className="manageasset-button" onClick={() => setactive(true)}>Manage asset</button>
                         </div>
-                        <Modal active={active} func ={nextbtn} close = {()=> setactive(false)}>
-                            <p>test</p>
-                        </Modal>
                     </div>
                 </>
             )

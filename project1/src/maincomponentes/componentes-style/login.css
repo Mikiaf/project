@@ -1,0 +1,37 @@
+/*nav-container style/css code*/
+.login_container{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(163, 165, 165);
+    width: 225px;
+    margin-top: 30px;
+    border-radius: 2px;
+    padding: 10px;
+}
+.login_container button{
+    width: 80px;
+    height: 25px;
+    margin-top: 5px;
+    background-color: rgb(79, 104, 107);
+    border: none;
+    color:white;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.login_container input{
+    border: none;
+    height: 25px;
+    outline: none;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+h2{
+    color: blue;
+    font-size: 15px;
+}
+.login_container button:hover{
+    background-color: rgb(80, 145, 145);
+    transition: 60ms;
+}
